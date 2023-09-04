@@ -1,2 +1,5 @@
 <h1>Hello</h1>
-<app-card></app-card>
+<div *ngFor="let item of data">
+  {{ item }}
+</div>
+<app-card [data]="data" (click)='handleClick(data)'></app-card>
